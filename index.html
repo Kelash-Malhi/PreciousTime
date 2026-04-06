@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Countdown Wallpaper</title>
+<link rel="icon" type="image/png" href="assets/T.png" />
+<link rel="stylesheet" href="assets/style.css">
+
+</head>
+<body>
+
+<div id="countdown">00d 00h 00m 00s</div>
+
+<button id="editButton">Edit Time</button>
+
+<div id="editContainer">
+  <label>Set Countdown:</label><br>
+  <input type="datetime-local" id="dateInput"><br>
+  <button onclick="setCountdown()">Save</button>
+  <button onclick="closeEdit()">Cancel</button>
+</div>
+
+<audio id="alarmSound">
+  <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
+</audio>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
